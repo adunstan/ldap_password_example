@@ -6,8 +6,8 @@ MODULE_big = ldap_password_func
 OBJS = ldap_password_func.o playfair.o $(WIN32RES)
 PGFILEDESC = "set hook to mutate ldapbindpasswd"
 
-TAP_TESTS = 1
-
 PG_CONFIG = pg_config
 PGXS := $(shell $(PG_CONFIG) --pgxs)
 include $(PGXS)
+
+

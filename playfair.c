@@ -1,8 +1,14 @@
 
+
+// Mostly from https://www.scaler.com/topics/playfair-cipher-program-in-c/
+
+
 // Implementation of Playfair Cipher in C program
 
 #include <stdlib.h>  //header file
 #include <string.h>  //header file
+
+#include "playfair.h"
 
 #define SIZE 30
 
@@ -31,7 +37,7 @@ static int removeSpaces(char* plain, int ps)
 // this function will generate the 5x5 grid square
 static void generateKeyTable(char key[], int ks, char keyT[5][5])
 {
-    int i, j, k, flag = 0, *dicty;
+    int i, j, k, *dicty;
 
     // character hashmap of 26 character that will
     // store count of the alphabet.

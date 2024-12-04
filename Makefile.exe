@@ -2,6 +2,8 @@
 
 # ldap_password_func Makefile.exe
 
+# builds a program to obfucate a password using the Playfair algorithm.
+
 PROGRAM = obfuscate
 OBJS = pf_encrypt.o playfair.o $(WIN32RES)
 PGFILEDESC = "obfuscate a password for use with ldap password hook"
