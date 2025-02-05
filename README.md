@@ -46,8 +46,8 @@ hook. Again, you have been warned.
 
 Place `pg_config` in your path and execute the following:
 
-    - `make`
-	- `make -f Makefile.exe`
+	make
+	make -f Makefile.exe
 	
 This should build two artefacts: `ldap_password_func.so` and
 `obfuscate` (or if you build with on Windows using Msys,
