@@ -11,6 +11,11 @@
 
 #include "postgres.h"
 
+/* check that we are compiling for the right postgres version */
+#if PG_VERSION_NUM < 160000
+#error ldap password hook not available before PostgreSQL Release 16
+#endif
+
 #include <float.h>
 #include <stdio.h>
 #include <string.h>
